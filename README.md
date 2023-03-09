@@ -1,6 +1,6 @@
 # Wanted-FreeOnBoarding-iOS
 원티드 프리온보딩 챌린지 iOS 파트
-## GCD - **Dispatch Queues**
+## 1차 스터디 GCD - **Dispatch Queues**
 
 dispatch queues를 사용하면 호출자(caller)와 관련하여 비동기/동기식으로 임의의 코드 블록을 수행 할 수 있습니다. dispatch queues를 사용하여 별도의 쓰레드에서 수행하는 거의 모든 task를 수행 할 수 있습니다. 
 
