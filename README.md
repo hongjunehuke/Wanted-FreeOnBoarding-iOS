@@ -62,8 +62,6 @@ DispatchQueue.main은 그냥 main이라 적어줬는데, global은 아니네요.
 
 하지만 global은 사실 파라미터로 무언가를 받네요!
 
-![스크린샷 2023-03-07 오후 5.21.17.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5824885e-b9c8-46f3-9ed7-c22adf4d6aa0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.21.17.png)
-
 global 이 파라미터로 받고 있는 qos는 … quality of service의 줄임말로 “중요도”라고 생각하면 됩니다.
 
 DispatchQoS의 overview를 잠깐 볼까요?
@@ -130,8 +128,6 @@ for i in 100...105 {
 }
 ```
 
-![스크린샷 2023-03-07 오후 6.35.54.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/20af888e-7966-414e-910b-caabf8fc5682/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.35.54.png)
-
 1. async
 
 global에서 async의 경우
@@ -153,8 +149,6 @@ for i in 100...105 {
     print("\(i)👻")
 }
 ```
-
-![스크린샷 2023-03-07 오후 7.13.47.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9deb6a9a-468a-4128-ba93-132ecd6b9236/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.13.47.png)
 
 결과는 매번 실행때 마다 다릅니다. 왜냐면 async는 완료 여부에 상관없이 다음 코드를 실행하니까..하지만 global. 즉 concurrent기 때문에 개(🐶)가 끝나지 않아도 😍가 실행될 수 있죠. 왜냐? concurrent니까..동시에...실행하니까...
 
