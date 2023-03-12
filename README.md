@@ -195,7 +195,6 @@ let WorkItem = DispatchWorkItem {
 }
 DispatchQueue.global().async(execute: WorkItem)
 ```
-
-이렇게..말 그대로 정말 캡슐화.…
+"캡슐화!!!"
 
 ** 제드님 블로그와 naljin님 블로그 참고하며 정리하였습니다.
